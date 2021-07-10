@@ -203,7 +203,7 @@ Objects {
       }
       StartSpawned: true
       SpawnMode {
-        Value: "mc:erespawnmode:inplace"
+        Value: "mc:espawnmode:random"
       }
     }
   }

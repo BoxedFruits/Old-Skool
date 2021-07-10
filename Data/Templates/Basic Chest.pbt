@@ -601,5 +601,5 @@ Assets {
       AssetId: "Basic_Chest"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
 }

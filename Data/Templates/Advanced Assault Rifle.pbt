@@ -97,8 +97,8 @@ Assets {
             BeamAssetRef {
               Id: 841534158063459245
             }
-            BurstCount: 10
-            BurstDuration: 4
+            BurstCount: 30
+            BurstDuration: 20
             BurstStopsWithRelease: true
             AttackCooldown: 0.25
             Range: 100000
@@ -108,7 +108,7 @@ Assets {
             ReticleType {
               Value: "mc:ereticletype:none"
             }
-            MaxAmmo: 62
+            MaxAmmo: 70
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 1
@@ -126,7 +126,7 @@ Assets {
             ReloadAbility {
               SubObjectId: 798527041546519963
             }
-            Damage: 50
+            Damage: 20
             WeaponTrajectoryMode {
               Value: "mc:eweapontrajectorymode:muzzletolooktarget"
             }
@@ -2040,5 +2040,5 @@ Assets {
       AssetId: "Advanced_Assault_Rifle"
     }
   }
-  SerializationVersion: 89
+  SerializationVersion: 91
 }

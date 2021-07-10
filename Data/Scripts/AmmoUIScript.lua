@@ -1,7 +1,7 @@
 local propAPISpectator = require(script:GetCustomProperty("APISpectator"))
-local AMMO_IN_MAGAZINE = script:GetCustomProperty("ammoInMagazine"):WaitForObject()
+local AMMO_IN_MAGAZINE = script:GetCustomProperty("ammoInMagazine"):WaitForObject() 
 local AMMO_LEFT = script:GetCustomProperty("ammoLeft"):WaitForObject()
-local propAmmoCounterClient = script:GetCustomProperty("AmmoCounterClient"):WaitForObject()
+local propAmmoCounterClient = script:GetCustomProperty("AmmoCounterClient"):WaitForObject() --This should be taken from from localPlayer
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 -- Grabs ability again from weapon in case the client hasn't loaded the object yet
@@ -29,10 +29,8 @@ function Tick(deltaTime)
     local player = GetViewedPlayer()
     local weapon = GetWeapon(player)
     if weapon ~= nil then
-        -- print(propAmmoCounterClient:GetCustomProperty("ammoInClip"))
         AMMO_IN_MAGAZINE.text = tostring(propAmmoCounterClient:GetCustomProperty("ammoInClip"))
-        AMMO_LEFT.text = tostring(weapon.maxAmmo)
-        -- print(script:GetCustomProperty("testProp"))
+        AMMO_LEFT.text = tostring(propAmmoCounterClient:GetCustomProperty("ammoLeft"))
     end
 
 end

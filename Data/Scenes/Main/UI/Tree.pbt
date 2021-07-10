@@ -170,8 +170,8 @@ Objects {
   Control {
     Width: 50
     Height: 60
-    UIX: -100
-    UIY: -50
+    UIX: -118.473633
+    UIY: -36.4919434
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -247,8 +247,10 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Control {
-    Width: 200
+    Width: 51
     Height: 60
+    UIX: -13.5112305
+    UIY: 4.50280762
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"

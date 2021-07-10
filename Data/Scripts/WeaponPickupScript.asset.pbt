@@ -1,6 +1,6 @@
 Assets {
-  Id: 5947649812799017109
-  Name: "AbilityDisplayClient"
+  Id: 3501887276730563069
+  Name: "WeaponPickupScript"
   PlatformAssetType: 3
   TextAsset {
   }
