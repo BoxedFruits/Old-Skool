@@ -11,10 +11,9 @@ while not Object.IsValid(RELOAD_ABILITY) do
     Task.Wait()
     RELOAD_ABILITY = WEAPON:GetAbilities()[2]
 end
-print(RELOAD_ABILITY.animation)
+
 local function OnProjectileSpawned(weapon, projectile)
     propAmmoInClip = propAmmoInClip - 1 > 0 and propAmmoInClip - 1 or 0
-    print(propAmmoInClip)
     script:SetNetworkedCustomProperty("ammoInClip", propAmmoInClip)
     if propAmmoInClip == 0 and weapon:HasAmmo() then
         RELOAD_ABILITY:Activate()
@@ -22,10 +21,10 @@ local function OnProjectileSpawned(weapon, projectile)
 
 end
 
+-- TODO: Make it so that you can't fire when reloading. It messes up with the script
+
 local function OnReload(ability)
     Task.Wait(RELOAD_ABILITY.castPhaseSettings.duration)
-    print("RELoADED")
-    print(RELOAD_ABILITY.castPhaseSettings.duration)
     if propAmmoInClip < propClipSize and RELOAD_ABILITY:GetCurrentPhase() ~= AbilityPhase.READY then
         local ammoLeft = script:GetCustomProperty("ammoLeft")
             if ammoLeft > propClipSize then
