@@ -23,6 +23,7 @@ Objects {
   ChildIds: 2750577535883354245
   ChildIds: 5111390582724021386
   ChildIds: 2785953479420458384
+  ChildIds: 8457698298248676984
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,6 +36,51 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8457698298248676984
+  Name: "Advanced Revolver"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12491446174189521336
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Advanced Revolver"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -394.753357
+            Y: -122.644104
+            Z: 2.28881836e-05
+          }
+        }
+        Overrides {
+          Name: "FiniteAmmo"
+          Bool: true
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12079949550243936908
+    }
   }
 }
 Objects {

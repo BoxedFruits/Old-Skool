@@ -57,16 +57,9 @@ Objects {
   Id: 17475774261599636703
   Name: "Advanced Assault Rifle"
   Transform {
-    Location {
-      X: -346.796753
-      Y: -879.361511
-      Z: 1.52587891e-05
-    }
-    Rotation {
-    }
     Scale {
-      X: 0.99999994
-      Y: 0.99999994
+      X: 1
+      Y: 1
       Z: 1
     }
   }
@@ -97,14 +90,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.99999994
-            Y: 0.99999994
-            Z: 1
           }
         }
       }

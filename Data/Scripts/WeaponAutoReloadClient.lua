@@ -42,6 +42,7 @@ local AUTO_RELOAD = script:GetCustomProperty("EnableAutoReload")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 local autoReloaded = false
 
+print(RELOAD_ABILITY.animation)
 function Tick(deltaTime)
 
     -- If auto reload is not actiavted ignore the script

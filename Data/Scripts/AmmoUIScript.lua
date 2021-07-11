@@ -1,10 +1,9 @@
 local propAPISpectator = require(script:GetCustomProperty("APISpectator"))
-local AMMO_IN_MAGAZINE = script:GetCustomProperty("ammoInMagazine"):WaitForObject() 
-local AMMO_LEFT = script:GetCustomProperty("ammoLeft"):WaitForObject()
-local propAmmoCounterClient = script:GetCustomProperty("AmmoCounterClient"):WaitForObject() --This should be taken from from localPlayer
+local AMMO_IN_MAGAZINE_TEXT = script:GetCustomProperty("ammoInMagazine"):WaitForObject()
+local AMMO_LEFT_TEXT = script:GetCustomProperty("ammoLeft"):WaitForObject()
 local LOCAL_PLAYER = Game.GetLocalPlayer()
-
--- Grabs ability again from weapon in case the client hasn't loaded the object yet
+local ammoLeft = 0
+local ammoInClip = 0
 
 function GetViewedPlayer()
     local specatatorTarget = propAPISpectator.GetSpectatorTarget()
@@ -20,6 +19,8 @@ end
 function GetWeapon(player)
     for i, v in ipairs(player:GetEquipment()) do
         if v:IsA("Weapon") then
+            ammoInClip = v:FindChildByName('AmmoCounterClient'):GetCustomProperty("ammoInClip")
+            ammoLeft = v:FindChildByName('AmmoCounterClient'):GetCustomProperty("ammoLeft")
             return v
         end
     end
@@ -28,17 +29,11 @@ end
 function Tick(deltaTime)
     local player = GetViewedPlayer()
     local weapon = GetWeapon(player)
+    -- local ammoCounterClient = GetAmmoCounterClient(weapon)
+
     if weapon ~= nil then
-        AMMO_IN_MAGAZINE.text = tostring(propAmmoCounterClient:GetCustomProperty("ammoInClip"))
-        AMMO_LEFT.text = tostring(propAmmoCounterClient:GetCustomProperty("ammoLeft"))
+        AMMO_IN_MAGAZINE_TEXT.text = tostring(ammoInClip)
+        AMMO_LEFT_TEXT.text = tostring(ammoLeft)
     end
 
 end
-
-function OnCustomPropertyChanged(coreObject, customPropertyName)
-    local newValue = coreObject:GetCustomProperty(customPropertyName)
-
-    print(string.format("New value of %s for %s is now %s", customPropertyName, coreObject.name, newValue))
-end
-
-propAmmoCounterClient.networkedPropertyChangedEvent:Connect(OnCustomPropertyChanged)

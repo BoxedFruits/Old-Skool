@@ -1,35 +1,37 @@
 local propClipSize = script:GetCustomProperty("clipSize")
 local propAmmoInClip = script:GetCustomProperty("ammoInClip")
+
 local WEAPON = script:FindAncestorByType('Weapon')
+if not WEAPON:IsA('Weapon') then
+    error(script.name .. " should be part of Weapon object hierarchy.")
+end
 local RELOAD_ABILITY = WEAPON:GetAbilities()[2]
 
 while not Object.IsValid(RELOAD_ABILITY) do
     Task.Wait()
     RELOAD_ABILITY = WEAPON:GetAbilities()[2]
 end
-
+print(RELOAD_ABILITY.animation)
 local function OnProjectileSpawned(weapon, projectile)
     propAmmoInClip = propAmmoInClip - 1 > 0 and propAmmoInClip - 1 or 0
     print(propAmmoInClip)
     script:SetNetworkedCustomProperty("ammoInClip", propAmmoInClip)
-    if propAmmoInClip == 0 then -- Automatically start reload animation. In future, should show Reload UI and CTA when ammo is expended
+    if propAmmoInClip == 0 and weapon:HasAmmo() then
         RELOAD_ABILITY:Activate()
-        Task.Wait(RELOAD_ABILITY.castPhaseSettings.duration)
     end
 
 end
 
 local function OnReload(ability)
-
-    if propAmmoInClip < propClipSize then
+    Task.Wait(RELOAD_ABILITY.castPhaseSettings.duration)
+    print("RELoADED")
+    print(RELOAD_ABILITY.castPhaseSettings.duration)
+    if propAmmoInClip < propClipSize and RELOAD_ABILITY:GetCurrentPhase() ~= AbilityPhase.READY then
         local ammoLeft = script:GetCustomProperty("ammoLeft")
             if ammoLeft > propClipSize then
                 ammoLeft = ammoLeft - (propClipSize - propAmmoInClip)
                 propAmmoInClip = propClipSize
             elseif ammoLeft < propClipSize - propAmmoInClip then
-                    print("in here")
-                    print(ammoLeft)
-                    print(propAmmoInClip)
                     propAmmoInClip = ammoLeft + propAmmoInClip
                     ammoLeft = 0
             else

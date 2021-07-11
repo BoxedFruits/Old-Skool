@@ -336,6 +336,9 @@ Objects {
       Name: "cs:AmmoCounterClient"
       ObjectReference {
         SelfId: 649950432943547902
+        SubObjectId: 17795561363524815438
+        InstanceId: 15467102407505452735
+        TemplateId: 15251061219835617909
       }
     }
   }
