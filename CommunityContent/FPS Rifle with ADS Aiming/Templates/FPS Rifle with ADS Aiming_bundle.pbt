@@ -49,5 +49,5 @@ Assets {
     Version: "1.18.0"
     Description: "A modified version of the Advanced Assault Rifle suitable for FPS games. Use with FPS ADS Camera Settings (in CC)."
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
 }

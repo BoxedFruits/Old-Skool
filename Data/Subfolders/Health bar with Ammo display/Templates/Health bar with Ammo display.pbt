@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "Dame as the defualt health bar but with an ammo display option. Taken from the basic shooter template"
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
 }

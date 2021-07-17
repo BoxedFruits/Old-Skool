@@ -21,7 +21,6 @@ function GetWeapon(player)
         if v:IsA("Weapon") then
             ammoInClip = v:FindChildByName('AmmoCounterClient'):GetCustomProperty("ammoInClip")
             ammoLeft = v:FindChildByName('AmmoCounterClient'):GetCustomProperty("ammoLeft")
-            return v
         end
     end
 end
@@ -29,11 +28,9 @@ end
 function Tick(deltaTime)
     local player = GetViewedPlayer()
     local weapon = GetWeapon(player)
-    -- local ammoCounterClient = GetAmmoCounterClient(weapon)
 
     if weapon ~= nil then
         AMMO_IN_MAGAZINE_TEXT.text = tostring(ammoInClip)
         AMMO_LEFT_TEXT.text = tostring(ammoLeft)
     end
-
 end

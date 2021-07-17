@@ -15,6 +15,11 @@ function OnPlayerDied(player)
     -- throwAbility.owner = player
     -- throwAbility:Activate()
 
+    player:SetResource('MovementModifier', 1) --This might be unecessary
+    player:SetResource('HealthModifier', 1)
+    player:SetResource('DamageModifier', 1.00)
+    player:SetResource('SpreadModifier', 1)
+
     for _, equipment in ipairs(player:GetEquipment()) do
         equipment:Unequip()
         equipment:Destroy()

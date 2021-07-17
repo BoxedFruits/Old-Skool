@@ -2,7 +2,7 @@ Assets {
   Id: 6259650995624700409
   Name: "Rocket Launcher Orange Opaque Material"
   PlatformAssetType: 13
-  SerializationVersion: 91
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 12827530473249900764
     ParameterOverrides {

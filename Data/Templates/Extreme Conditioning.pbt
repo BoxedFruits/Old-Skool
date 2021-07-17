@@ -7,7 +7,7 @@ Assets {
       RootId: 3771615552527842358
       Objects {
         Id: 3771615552527842358
-        Name: "Extreme Conditioning"
+        Name: "Extreme Conditioning Perk"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 8236137284477493866
         ChildIds: 6343799943938604960
         ChildIds: 7836304023332682830
         ChildIds: 3393932781448350060
@@ -242,5 +242,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 91
+  SerializationVersion: 92
 }

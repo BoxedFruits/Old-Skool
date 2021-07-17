@@ -23,7 +23,7 @@ Objects {
   ChildIds: 2750577535883354245
   ChildIds: 5111390582724021386
   ChildIds: 2785953479420458384
-  ChildIds: 8457698298248676984
+  ChildIds: 7321007851139115367
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,8 +39,8 @@ Objects {
   }
 }
 Objects {
-  Id: 8457698298248676984
-  Name: "Advanced Revolver"
+  Id: 7321007851139115367
+  Name: "Extreme Conditioning"
   Transform {
     Scale {
       X: 1
@@ -58,28 +58,45 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 12491446174189521336
+      key: 3393932781448350060
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3771615552527842358
       value {
         Overrides {
           Name: "Name"
-          String: "Advanced Revolver"
+          String: "Extreme Conditioning Perk"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -394.753357
-            Y: -122.644104
+            X: -1.99422932
+            Y: -674.734802
             Z: 2.28881836e-05
           }
         }
         Overrides {
-          Name: "FiniteAmmo"
-          Bool: true
+          Name: "Scale"
+          Vector {
+            X: 0.941344142
+            Y: 0.941344142
+            Z: 0.941344142
+          }
         }
       }
     }
     TemplateAsset {
-      Id: 12079949550243936908
+      Id: 229319564695125325
     }
   }
 }
