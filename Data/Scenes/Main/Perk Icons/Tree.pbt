@@ -136,7 +136,7 @@ Objects {
 }
 Objects {
   Id: 3388567936660943653
-  Name: "Marathon Icon"
+  Name: "Extreme Conditioning Icon"
   Transform {
     Location {
     }
@@ -203,7 +203,7 @@ Objects {
 }
 Objects {
   Id: 17656785875304336007
-  Name: "Juggernaugt Icon"
+  Name: "Juggernaut Icon"
   Transform {
     Location {
     }

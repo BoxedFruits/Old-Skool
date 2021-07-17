@@ -19,8 +19,10 @@ end
 function GetWeapon(player)
     for i, v in ipairs(player:GetEquipment()) do
         if v:IsA("Weapon") then
+            print("found a weapon")
             ammoInClip = v:FindChildByName('AmmoCounterClient'):GetCustomProperty("ammoInClip")
             ammoLeft = v:FindChildByName('AmmoCounterClient'):GetCustomProperty("ammoLeft")
+            return v
         end
     end
 end

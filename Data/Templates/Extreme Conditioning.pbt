@@ -82,7 +82,7 @@ Assets {
       }
       Objects {
         Id: 3539396102111928952
-        Name: "MarathonPro"
+        Name: "ExtremeConditioning"
         Transform {
           Location {
           }

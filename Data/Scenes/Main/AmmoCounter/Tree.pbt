@@ -315,9 +315,9 @@ Objects {
   ParentId: 228427407560304181
   UnregisteredParameters {
     Overrides {
-      Name: "cs:ammoLeft"
-      ObjectReference {
-        SelfId: 6837697720416625927
+      Name: "cs:APISpectator"
+      AssetReference {
+        Id: 14633632985083390763
       }
     }
     Overrides {
@@ -327,9 +327,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:APISpectator"
-      AssetReference {
-        Id: 14633632985083390763
+      Name: "cs:ammoLeft"
+      ObjectReference {
+        SelfId: 6837697720416625927
       }
     }
   }

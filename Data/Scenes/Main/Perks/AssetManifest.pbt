@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13105710033491365011
-  Name: "Faceted Basic"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "plastic_faceted_001"
-  }
-}
-Assets {
   Id: 8634861466077016642
   Name: "Hiragana Font 1: \357\274\201"
   PlatformAssetType: 1
