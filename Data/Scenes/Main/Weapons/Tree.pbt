@@ -129,13 +129,21 @@ Objects {
           Name: "Position"
           Vector {
             X: -346.796753
-            Y: -879.361511
+            Y: -879.36145
             Z: 1.52587891e-05
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.99999994
+            Y: 0.99999994
+            Z: 1
           }
         }
       }
