@@ -18,13 +18,26 @@ local equippedPerks = {}
 local perkUIList = {propPerk1, propPerk2, propPerk3}
 
 function PickedUpPerk(perk) -- If at 3 perks need to shift one out and add the new one to the start.
-    print("picekd up perk: " .. perk)
-    if #equippedPerks < 3 then
-        equippedPerks[#equippedPerks + 1] = perk
-        print(#equippedPerks)
-        SetPerkIcon(equippedPerks)
-    else
-        
+    print("picked up perk: " .. perk , #equippedPerks)
+    local isAlreadyEquipped = false
+
+    for _, value in ipairs(equippedPerks) do
+        if perk == value then
+            isAlreadyEquipped = true
+        end
+    end
+
+    if isAlreadyEquipped == false then
+        if #equippedPerks <= 2 then
+            equippedPerks[#equippedPerks + 1] = perk
+            SetPerkIcon(equippedPerks)
+        else
+            local temp = equippedPerks[2]
+                equippedPerks[2] = equippedPerks[1]
+                equippedPerks[3] = temp
+                equippedPerks[1] = perk
+                SetPerkIcon(equippedPerks)
+            end
     end
 end
 
