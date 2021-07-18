@@ -18,7 +18,7 @@ Assets {
         ParentId: 8236137284477493866
         ChildIds: 16510767540524118661
         ChildIds: 13937457969368515874
-        ChildIds: 18063830165875575776
+        ChildIds: 3195815559785537730
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -144,61 +144,22 @@ Assets {
         }
       }
       Objects {
-        Id: 18063830165875575776
-        Name: "Hiragana Font 1: \357\274\201"
+        Id: 3195815559785537730
+        Name: "Modern Weapon Ammo - Bullet 01"
         Transform {
           Location {
+            Z: 65.3970947
           }
           Rotation {
+            Pitch: 39.5460625
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 16.3536186
+            Y: 17.5632248
+            Z: 13.4594536
           }
         }
         ParentId: 16233612559593130502
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Font_Bevel:id"
-            AssetReference {
-              Id: 13105710033491365011
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Faces:id"
-            AssetReference {
-              Id: 13105710033491365011
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Sides:id"
-            AssetReference {
-              Id: 13105710033491365011
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Bevel:color"
-            Color {
-              R: 0.40625
-              A: 0.386
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Faces:color"
-            Color {
-              R: 0.40625
-              A: 0.154000014
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Sides:color"
-            Color {
-              R: 0.40625
-              A: 0.128
-            }
-          }
-        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -214,7 +175,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 8634861466077016642
+            Id: 9826710443425479508
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -231,21 +192,12 @@ Assets {
       }
     }
     Assets {
-      Id: 8634861466077016642
-      Name: "Hiragana Font 1: \357\274\201"
+      Id: 9826710443425479508
+      Name: "Modern Weapon Ammo - Bullet 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "meyiro_block_hiragana_089"
-      }
-    }
-    Assets {
-      Id: 13105710033491365011
-      Name: "Faceted Basic"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "plastic_faceted_001"
+        AssetId: "sm_weap_modern_ammo_bullet_tip_001"
       }
     }
     PrimaryAssetId {

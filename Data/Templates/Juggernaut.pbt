@@ -7,7 +7,7 @@ Assets {
       RootId: 1893999176600337937
       Objects {
         Id: 1893999176600337937
-        Name: "Juggernaut"
+        Name: "Juggernaut Perk"
         Transform {
           Scale {
             X: 1
@@ -18,7 +18,7 @@ Assets {
         ParentId: 8236137284477493866
         ChildIds: 5222729409634038281
         ChildIds: 6357917748668701171
-        ChildIds: 13544387110700809999
+        ChildIds: 14891344756775088192
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -144,10 +144,12 @@ Assets {
         }
       }
       Objects {
-        Id: 13544387110700809999
-        Name: "Sign Font 1: !"
+        Id: 14891344756775088192
+        Name: "Shield 01"
         Transform {
           Location {
+            X: -18.2146
+            Z: 38.1192627
           }
           Rotation {
           }
@@ -160,45 +162,15 @@ Assets {
         ParentId: 1893999176600337937
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Font_Sides:id"
+            Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 17283898979870776488
+              Id: 7061828405687083680
             }
           }
           Overrides {
-            Name: "ma:Font_Faces:id"
+            Name: "ma:Shared_Detail2:id"
             AssetReference {
-              Id: 17283898979870776488
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Insides:id"
-            AssetReference {
-              Id: 17283898979870776488
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Sides:color"
-            Color {
-              R: 0.97
-              B: 0.231257707
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Faces:color"
-            Color {
-              R: 0.73
-              B: 0.319072515
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Insides:color"
-            Color {
-              R: 0.97
-              B: 0.443244457
-              A: 1
+              Id: 7061828405687083680
             }
           }
         }
@@ -217,7 +189,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18257645241924776057
+            Id: 9376628797136455849
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -234,21 +206,21 @@ Assets {
       }
     }
     Assets {
-      Id: 18257645241924776057
-      Name: "Sign Font 1: !"
+      Id: 9376628797136455849
+      Name: "Shield 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "CollegeInset_01_Text_037_ref"
+        AssetId: "sm_shield_001"
       }
     }
     Assets {
-      Id: 17283898979870776488
-      Name: "Additive Soft Edge"
+      Id: 7061828405687083680
+      Name: "Energy Tube Glow"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "fxma_additive_edgefade"
+        AssetId: "Energy_Tube_Glow"
       }
     }
     PrimaryAssetId {

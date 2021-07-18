@@ -33,6 +33,11 @@ Objects {
             Y: -450
           }
         }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
       }
     }
     TemplateAsset {
@@ -86,7 +91,7 @@ Objects {
 }
 Objects {
   Id: 7941144770027344845
-  Name: "Juggernaut"
+  Name: "Juggernaut Perk"
   Transform {
     Scale {
       X: 1
@@ -115,6 +120,22 @@ Objects {
           Vector {
             Y: 200
             Z: 50
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14891344756775088192
+      value {
+        Overrides {
+          Name: "ma:Shared_Detail1:id"
+          AssetReference {
+            Id: 7061828405687083680
           }
         }
       }

@@ -18,7 +18,7 @@ Assets {
         ParentId: 8236137284477493866
         ChildIds: 9814236811584268739
         ChildIds: 16842907063585415666
-        ChildIds: 18078964195274479752
+        ChildIds: 976199407033338003
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -146,40 +146,25 @@ Assets {
         }
       }
       Objects {
-        Id: 18078964195274479752
-        Name: "Hiragana Font 1: \357\274\201"
+        Id: 976199407033338003
+        Name: "Bone Human Hand 01"
         Transform {
           Location {
+            X: -7.48645
+            Y: 50
+            Z: 50
           }
           Rotation {
+            Pitch: -16.7419128
+            Yaw: -22.9684753
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.55930126
+            Y: 1.51452756
+            Z: 1.86146855
           }
         }
         ParentId: 12485620581560472816
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Font_Sides:id"
-            AssetReference {
-              Id: 17283898979870776488
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Faces:id"
-            AssetReference {
-              Id: 17283898979870776488
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Bevel:id"
-            AssetReference {
-              Id: 17283898979870776488
-            }
-          }
-        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -195,7 +180,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 8634861466077016642
+            Id: 3513866178657973805
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -212,21 +197,12 @@ Assets {
       }
     }
     Assets {
-      Id: 8634861466077016642
-      Name: "Hiragana Font 1: \357\274\201"
+      Id: 3513866178657973805
+      Name: "Bone Human Hand 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "meyiro_block_hiragana_089"
-      }
-    }
-    Assets {
-      Id: 17283898979870776488
-      Name: "Additive Soft Edge"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxma_additive_edgefade"
+        AssetId: "sm_bones_human_hand_01_ref"
       }
     }
     PrimaryAssetId {

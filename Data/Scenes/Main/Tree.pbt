@@ -24,8 +24,6 @@ Objects {
   ChildIds: 5111390582724021386
   ChildIds: 2785953479420458384
   ChildIds: 7321007851139115367
-  ChildIds: 13679606521829208358
-  ChildIds: 18237772780753677563
   ChildIds: 1220268826979202637
   ChildIds: 11757871621871257513
   ChildIds: 6127826481603760772
@@ -169,6 +167,19 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 11310207070413716197
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.749997258
+            Y: 0.749997258
+            Z: 0.25
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16061930108774093730
       value {
         Overrides {
@@ -193,82 +204,6 @@ Objects {
     TemplateAsset {
       Id: 12657729259647524521
     }
-  }
-}
-Objects {
-  Id: 18237772780753677563
-  Name: "Advanced Staff"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17992957111025546175
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Advanced Staff"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 256.033356
-            Y: 567.655151
-            Z: 2.28881836e-05
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4451540811241983910
-    }
-  }
-}
-Objects {
-  Id: 13679606521829208358
-  Name: "RandomEquipmentSpawner"
-  Transform {
-    Location {
-      X: -673.097107
-      Y: 122.690155
-      Z: -3.05175781e-05
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "RandomEquipmentSpawner"
   }
 }
 Objects {

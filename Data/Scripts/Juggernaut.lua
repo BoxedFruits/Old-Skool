@@ -6,6 +6,7 @@ function OnEquipped(equipement, player)
     player.hitPoints = player.hitPoints
     player.maxHitPoints = player.maxHitPoints * HealthModifier
     Events.BroadcastToPlayer(player, 'pickedUpPerk', 'Juggernaut')
+    equipement.visibility = Visibility.FORCE_OFF
 end
 
 primaryEquipment.equippedEvent:Connect(OnEquipped)

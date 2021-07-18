@@ -18,7 +18,7 @@ Assets {
         ParentId: 8236137284477493866
         ChildIds: 6343799943938604960
         ChildIds: 7836304023332682830
-        ChildIds: 3393932781448350060
+        ChildIds: 16594570575812819396
         UnregisteredParameters {
           Overrides {
             Name: "cs:ShiftToSprint"
@@ -154,37 +154,30 @@ Assets {
         }
       }
       Objects {
-        Id: 3393932781448350060
-        Name: "Hiragana Font 1: \357\274\201"
+        Id: 16594570575812819396
+        Name: "Tire Worn"
         Transform {
           Location {
+            X: 9.14416504
+            Y: -34.4989624
+            Z: 45.979248
           }
           Rotation {
+            Pitch: -14.9163513
+            Roll: 60.7809944
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 3771615552527842358
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Font_Sides:id"
+            Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 17283898979870776488
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Faces:id"
-            AssetReference {
-              Id: 17283898979870776488
-            }
-          }
-          Overrides {
-            Name: "ma:Font_Bevel:id"
-            AssetReference {
-              Id: 17283898979870776488
+              Id: 7061828405687083680
             }
           }
         }
@@ -203,7 +196,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 8634861466077016642
+            Id: 14565993562237882178
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -220,21 +213,21 @@ Assets {
       }
     }
     Assets {
-      Id: 8634861466077016642
-      Name: "Hiragana Font 1: \357\274\201"
+      Id: 14565993562237882178
+      Name: "Tire Worn"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "meyiro_block_hiragana_089"
+        AssetId: "sm_prop_mil_tire_worn_01_ref"
       }
     }
     Assets {
-      Id: 17283898979870776488
-      Name: "Additive Soft Edge"
+      Id: 7061828405687083680
+      Name: "Energy Tube Glow"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "fxma_additive_edgefade"
+        AssetId: "Energy_Tube_Glow"
       }
     }
     PrimaryAssetId {
