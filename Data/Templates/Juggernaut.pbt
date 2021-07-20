@@ -148,7 +148,6 @@ Assets {
         Name: "Shield 01"
         Transform {
           Location {
-            X: -18.2146
             Z: 38.1192627
           }
           Rotation {
@@ -169,6 +168,12 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 7061828405687083680
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
             AssetReference {
               Id: 7061828405687083680
             }

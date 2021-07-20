@@ -95,12 +95,13 @@ Assets {
         Name: "Marker Group"
         Transform {
           Location {
+            Y: -22.2305145
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
+            X: 0.999997854
+            Y: 0.999997854
             Z: 1
           }
         }
@@ -620,15 +621,13 @@ Assets {
         Name: "Pivot"
         Transform {
           Location {
-            X: -72.2555542
-            Y: 307.133911
-            Z: 5.34057617e-05
+            Y: 10.0670166
           }
           Rotation {
           }
           Scale {
-            X: 0.75
-            Y: 0.75
+            X: 0.749992073
+            Y: 0.749992073
             Z: 0.25
           }
         }

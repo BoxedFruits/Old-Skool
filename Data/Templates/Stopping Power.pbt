@@ -160,6 +160,14 @@ Assets {
           }
         }
         ParentId: 16233612559593130502
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7061828405687083680
+            }
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -198,6 +206,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_modern_ammo_bullet_tip_001"
+      }
+    }
+    Assets {
+      Id: 7061828405687083680
+      Name: "Energy Tube Glow"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "Energy_Tube_Glow"
       }
     }
     PrimaryAssetId {

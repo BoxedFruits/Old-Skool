@@ -10,9 +10,9 @@ Assets {
         Name: "Extreme Conditioning Perk"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.941344142
+            Y: 0.941344142
+            Z: 0.941344142
           }
         }
         ParentId: 8236137284477493866
@@ -158,9 +158,7 @@ Assets {
         Name: "Tire Worn"
         Transform {
           Location {
-            X: 9.14416504
-            Y: -34.4989624
-            Z: 45.979248
+            Z: 45.9792366
           }
           Rotation {
             Pitch: -14.9163513

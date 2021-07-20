@@ -150,8 +150,6 @@ Assets {
         Name: "Bone Human Hand 01"
         Transform {
           Location {
-            X: -7.48645
-            Y: 50
             Z: 50
           }
           Rotation {
@@ -159,12 +157,20 @@ Assets {
             Yaw: -22.9684753
           }
           Scale {
-            X: 1.55930126
-            Y: 1.51452756
-            Z: 1.86146855
+            X: 1.871
+            Y: 2.32783937
+            Z: 2.59644651
           }
         }
         ParentId: 12485620581560472816
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7061828405687083680
+            }
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -203,6 +209,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_bones_human_hand_01_ref"
+      }
+    }
+    Assets {
+      Id: 7061828405687083680
+      Name: "Energy Tube Glow"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "Energy_Tube_Glow"
       }
     }
     PrimaryAssetId {
