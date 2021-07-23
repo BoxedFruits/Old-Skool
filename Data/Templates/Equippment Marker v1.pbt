@@ -72,6 +72,36 @@ Assets {
               Id: 15251061219835617909
             }
           }
+          Overrides {
+            Name: "cs:Revolver"
+            AssetReference {
+              Id: 12079949550243936908
+            }
+          }
+          Overrides {
+            Name: "cs:Submachine_Gun"
+            AssetReference {
+              Id: 5367256502435263315
+            }
+          }
+          Overrides {
+            Name: "cs:Pistol"
+            AssetReference {
+              Id: 8879468931036104744
+            }
+          }
+          Overrides {
+            Name: "cs:Crossbow"
+            AssetReference {
+              Id: 6963410086791458053
+            }
+          }
+          Overrides {
+            Name: "cs:Sniper"
+            AssetReference {
+              Id: 9731782015075605363
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -621,13 +651,13 @@ Assets {
         Name: "Pivot"
         Transform {
           Location {
-            Y: 10.0670166
+            Y: 9.111
           }
           Rotation {
           }
           Scale {
-            X: 0.749992073
-            Y: 0.749992073
+            X: 0.749991417
+            Y: 0.749991417
             Z: 0.25
           }
         }

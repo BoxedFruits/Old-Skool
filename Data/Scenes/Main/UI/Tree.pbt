@@ -1,6 +1,59 @@
 Name: "UI"
 RootId: 2785953479420458384
 Objects {
+  Id: 844763188923013840
+  Name: "XPBar + Leveling Script"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2785953479420458384
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4183479873208866389
+      value {
+        Overrides {
+          Name: "Name"
+          String: "XPBar + Leveling Script"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -599.709229
+            Y: -428.406281
+            Z: 274.903473
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8781590509346983307
+    }
+  }
+}
+Objects {
   Id: 2293853286146209882
   Name: "Pickedup Perks"
   Transform {

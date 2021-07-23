@@ -158,7 +158,7 @@ Assets {
         Name: "Tire Worn"
         Transform {
           Location {
-            Z: 45.9792366
+            Z: 30
           }
           Rotation {
             Pitch: -14.9163513

@@ -148,7 +148,7 @@ Assets {
         Name: "Modern Weapon Ammo - Bullet 01"
         Transform {
           Location {
-            Z: 65.3970947
+            Z: 40
           }
           Rotation {
             Pitch: 39.5460625

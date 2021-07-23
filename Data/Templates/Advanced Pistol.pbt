@@ -15,7 +15,9 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14351769760478014791
+        ParentId: 4781671109827199097
+        ChildIds: 9586394669095411142
+        ChildIds: 14909409658506501327
         ChildIds: 7509948360020567706
         ChildIds: 9033229733907759422
         ChildIds: 7658899639467386094
@@ -98,8 +100,9 @@ Assets {
             ReticleType {
               Value: "mc:ereticletype:none"
             }
-            MaxAmmo: 16
+            MaxAmmo: 40
             AmmoType: "rounds"
+            IsFiniteAmmo: true
             MultiShot: 1
             ProjectileSpeed: 25000
             ProjectileLifeSpan: 10
@@ -118,6 +121,114 @@ Assets {
             WeaponTrajectoryMode {
               Value: "mc:eweapontrajectorymode:muzzletolooktarget"
             }
+          }
+        }
+      }
+      Objects {
+        Id: 9586394669095411142
+        Name: "WeaponPickupScript"
+        Transform {
+          Location {
+            X: 268.598877
+            Y: -66.4783325
+            Z: -19.5909386
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.99999994
+            Y: 0.99999994
+            Z: 1
+          }
+        }
+        ParentId: 2401814779510463663
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:AmmoCounterClient"
+            ObjectReference {
+              SubObjectId: 14909409658506501327
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 3501887276730563069
+          }
+        }
+      }
+      Objects {
+        Id: 14909409658506501327
+        Name: "AmmoCounterClient"
+        Transform {
+          Location {
+            X: 383.263184
+            Y: 776.723267
+            Z: -19.5909653
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.999999642
+            Y: 0.999999642
+            Z: 1
+          }
+        }
+        ParentId: 2401814779510463663
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:clipSize"
+            Int: 16
+          }
+          Overrides {
+            Name: "cs:ammoInClip"
+            Int: 16
+          }
+          Overrides {
+            Name: "cs:ammoLeft"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:ammoInClip:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:ammoLeft:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:clipSize:isrep"
+            Bool: true
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 16432227083651034350
           }
         }
       }

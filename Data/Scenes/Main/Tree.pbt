@@ -27,6 +27,9 @@ Objects {
   ChildIds: 1220268826979202637
   ChildIds: 11757871621871257513
   ChildIds: 6127826481603760772
+  ChildIds: 10847764814714803306
+  ChildIds: 3216001645451353745
+  ChildIds: 5749875898772207982
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -42,19 +45,171 @@ Objects {
   }
 }
 Objects {
+  Id: 5749875898772207982
+  Name: "Advanced Assault Rifle"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13859206571032135798
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Advanced Assault Rifle"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -114.664322
+            Y: -843.201599
+            Z: 2.67028809e-05
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17795561363524815438
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.999999642
+            Y: 0.999999642
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:clipSize"
+          Int: 30
+        }
+        Overrides {
+          Name: "cs:ammoInClip"
+          Int: 30
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15251061219835617909
+    }
+  }
+}
+Objects {
+  Id: 3216001645451353745
+  Name: "Advanced Sniper Rifle"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13428547215643356789
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Advanced Sniper Rifle"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -394.551849
+            Y: -144.87999
+            Z: 2.28881836e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9731782015075605363
+    }
+  }
+}
+Objects {
+  Id: 10847764814714803306
+  Name: "Advanced Crossbow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14934994781472954733
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Advanced Crossbow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -344.098328
+            Y: -368.022614
+            Z: 2.28881836e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6963410086791458053
+    }
+  }
+}
+Objects {
   Id: 6127826481603760772
   Name: "Equippment Marker v1"
   Transform {
-    Location {
-      X: -673.097107
-      Y: 122.690186
-      Z: -3.05175781e-05
-    }
-    Rotation {
-    }
     Scale {
-      X: 0.99999994
-      Y: 0.99999994
+      X: 1
+      Y: 1
       Z: 1
     }
   }
@@ -98,16 +253,9 @@ Objects {
   Id: 11757871621871257513
   Name: "Equippment Marker v1"
   Transform {
-    Location {
-      X: -673.097107
-      Y: 122.690186
-      Z: -3.05175781e-05
-    }
-    Rotation {
-    }
     Scale {
-      X: 0.99999994
-      Y: 0.99999994
+      X: 1
+      Y: 1
       Z: 1
     }
   }
@@ -120,25 +268,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 11310207070413716197
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            Y: 9.11145
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.749991417
-            Y: 0.749991417
-            Z: 0.25
-          }
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 16061930108774093730
       value {
@@ -819,15 +948,6 @@ Objects {
   }
   ParentId: 4781671109827199097
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:MyGrenade"
-      ObjectReference {
-        SelfId: 17308101210002868792
-        SubObjectId: 18045273018505054026
-        InstanceId: 16741442710759475818
-        TemplateId: 10471569944696513969
-      }
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

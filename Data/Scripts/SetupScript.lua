@@ -1,5 +1,3 @@
-local propMyGrenade = script:GetCustomProperty("MyGrenade"):WaitForObject()
-
 local function OnPlayerJoined(player)
     player:SetResource('MovementModifier', 1)
     player:SetResource('HealthModifier', 1)

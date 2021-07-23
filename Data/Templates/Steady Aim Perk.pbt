@@ -150,11 +150,12 @@ Assets {
         Name: "Bone Human Hand 01"
         Transform {
           Location {
-            Z: 50
+            Z: 30
           }
           Rotation {
-            Pitch: -16.7419128
-            Yaw: -22.9684753
+            Pitch: -36.5806274
+            Yaw: -27.7323303
+            Roll: 10.4360809
           }
           Scale {
             X: 1.871
